@@ -2,7 +2,7 @@
 Description: Initial web deployment of Mercury Webpage
 Date: April 5th, 2025
 Author: Lex
-Purpose: Personal project to develop software webdevelopment skills using Flask and Render to
+Purpose: Personal project to develop software web development skills using Flask and Render to
          build a backend, frontend, and deploy a webpage
 
 '''
@@ -29,6 +29,6 @@ def home():
 # Ensure Flask binds to 0.0.0.0 and uses the port provided by Render
 if __name__ == "__main__":
     # Get the port from the environment variable provided by Render, default to 5000 if not set
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 3308))
     # Run the app on 0.0.0.0 with the dynamically assigned port
     app.run(host="0.0.0.0", port=port)
